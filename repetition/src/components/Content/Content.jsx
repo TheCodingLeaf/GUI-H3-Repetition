@@ -1,3 +1,5 @@
+import "./Content.css"
+
 export function Content({paragraph1, paragraph2, paragraph3, pic}){
 
     return(
@@ -12,8 +14,9 @@ export function Content({paragraph1, paragraph2, paragraph3, pic}){
             <li>
                 {paragraph3},
             </li>
+            <img src={pic} width={50} height={50}/>
         </ul>
-        <img src={pic} width={50} height={50}/>
+
         </>
     )
 }

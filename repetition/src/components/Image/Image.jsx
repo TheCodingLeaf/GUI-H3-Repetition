@@ -1,3 +1,5 @@
+import "./Image.css"
+
 export function Image({picture}){
 
     return(

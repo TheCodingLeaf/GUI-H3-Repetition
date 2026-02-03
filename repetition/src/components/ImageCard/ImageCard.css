@@ -1,0 +1,16 @@
+h1 {
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+p {
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
