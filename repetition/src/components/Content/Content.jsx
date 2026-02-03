@@ -1,11 +1,8 @@
-import pic from '../../assets/aaaa.jpg';
-
 export function Content({paragraph1, paragraph2, paragraph3, pic}){
 
     return(
         <>
         <ul>
-            {pic}
             <li>
                 {paragraph1},
             </li>
