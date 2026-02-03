@@ -1,8 +1,8 @@
-export function Header(){
+export function Header({title}){
 
     return(
         <>
-        <h1>My Repetition Homepage</h1>
+        <h1>My Repetition Homepage - {title}</h1>
         </>
     )
 }
