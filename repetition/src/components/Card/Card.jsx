@@ -1,16 +1,15 @@
-import "./Card.css"
+import React from 'react';
+import './Card.css';
 
-export function Card({title, image, pris, description, knap}){
-
-    return(
-        <>
-        <ul>
-            <h2>{title}</h2>
-            <img src={image} width={200} height={200}/>
-            <p>{description}</p>
-            <h3>{pris}</h3>
-            <div className="button">{knap}</div>
-        </ul>
-        </>
-    )
+export default function Card({ product }) {
+  if (!product) return null;
+  const { Title, Price, Description, Image_URL } = product;
+  return (
+    <div className="card">
+      {Image_URL && <img src={Image_URL} alt={Title} height={50} width={50}/>}
+      <h3>{Title}</h3>
+      {Price && <p className="price">{Price}</p>}
+      {Description && <p>{Description}</p>}
+    </div>
+  );
 }
